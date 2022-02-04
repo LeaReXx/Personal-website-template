@@ -1,0 +1,451 @@
+/* ==================
+==========================
+================================
+>> These styles are the same for all pages <<
+================================
+==========================
+================== */
+
+/* default Style  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    font-family: primary-font;
+    background-color: #F5F6F7;
+    color: var(--font-color);
+}
+
+button {
+    font-family: inherit;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+:root {
+    --font-color: #44566c;
+    --primary-color: #304cfd;
+    --secondary-color: #F3F4F5;
+    --black-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}
+
+.main {
+
+    position: relative;
+}
+
+/* background images  */
+.background-image {
+    width: clamp(200px, 50%, 650px);
+    position: absolute;
+    min-width: none;
+    z-index: -1;
+}
+
+.bg-img-top-right {
+    top: 0;
+    right: 0;
+}
+
+.bg-img-buttom-left {
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Humberger Menu Style */
+.humberger {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.623);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.list.menu-active {
+    transform: translateX(0);
+
+}
+
+.menu-btn {
+    z-index: 2;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+
+.line-2 {
+    width: 16px;
+    height: 2px;
+    margin: 4px 5px 4px 0;
+}
+
+.line-1,
+.line-3 {
+    width: 20px;
+    height: 2px;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+
+.menu-btn.active {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+
+}
+
+.line-2.active {
+    margin: unset;
+    background: transparent;
+}
+
+.line-1.active,
+.line-3.active {
+    background-color: var(--primary-color);
+}
+
+.line-3.active {
+    margin: -2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.line-1.active {
+    margin: -2px 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.site-menu {
+    font-size: 25px;
+    font-weight: 400;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-out-anim {
+    padding: 5px 0;
+    transform: translateX(-100vh);
+    animation-name: test;
+    animation-duration: 0.2s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes test {
+    from {
+        transform: translateX(0);
+        opacity: 0.7;
+    }
+
+    to {
+        transform: translateX(-100vh);
+        opacity: 0;
+    }
+}
+
+.menu-out-anim:nth-child(1) {
+    animation-duration: 0.8s;
+}
+
+.menu-out-anim:nth-child(2) {
+    animation-duration: 0.7s;
+}
+
+.menu-out-anim:nth-child(3) {
+    animation-duration: 0.6s;
+}
+
+.menu-out-anim:nth-child(4) {
+    animation-duration: 0.5s;
+}
+
+.site-menu-item {
+    color: var(--font-color);
+    opacity: 0.7;
+    padding: 5px 0;
+    transition: all 0.4s;
+    animation-name: transformanim;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes transformanim {
+    from {
+        transform: translateX(-100vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+
+        opacity: 1;
+    }
+}
+
+.site-menu-item:hover {
+    color: var(--primary-color);
+}
+
+.site-menu-item:nth-child(1) {
+    animation-duration: 1s;
+
+}
+
+.site-menu-item:nth-child(2) {
+    animation-duration: 1.2s;
+}
+
+.site-menu-item:nth-child(3) {
+    animation-duration: 1.4s;
+}
+
+.site-menu-item:nth-child(4) {
+    animation-duration: 1.6s;
+}
+
+
+
+
+/* Right Container  */
+.right-side {
+    padding: 10rem 0 0 0;
+}
+
+.right-container {
+    width: clamp(250px, 95%, 95%);
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.profile-img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.avatar {
+    margin-top: -6rem;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.name-and-social-icon {
+    text-align: center;
+    margin-top: -3rem;
+    transition: all 0.3s;
+}
+
+.name {
+    font-family: secondary-font;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.badge {
+    margin-top: 1rem;
+    font-size: 16px;
+    background-color: #f5f6f7;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.social-icon-item {
+    font-size: 18px;
+    margin: 2rem 0.5rem;
+    transition: all 0.3s;
+}
+
+.social-icon-item:hover,
+.my-info a:hover {
+    color: var(--primary-color);
+}
+
+
+/* my information style */
+.information {
+    background-color: #f5f8f9;
+    border-radius: 0 0 15px 15px;
+}
+
+.my-info-box-father {
+    padding: 1rem 0.5rem;
+}
+
+.my-info {
+    padding: 8px 0;
+}
+
+.my-info p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.my-info a {
+    transition: all 0.2s;
+}
+
+.my-info-item-icons {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+/* cv download button  */
+
+.mycv {
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+.my-cv-btn {
+    width: clamp(250px, 90%, 90%);
+    margin: auto;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: rgba(48, 76, 253, 0.15) 0px 8px 16px 0px, rgba(48, 76, 253, 0.15) 0px 2px 4px 0px;
+}
+
+.my-cv-btn:hover {
+    box-shadow: none;
+}
+
+.my-cv-btn .fa-file-download {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
+/* Left Container Style  */
+.left-container {
+    width: clamp(250px, 95%, 95%);
+    margin: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content-heading {
+    font-family: secondary-font;
+    font-size: 26px;
+    font-weight: 700;
+    position: relative;
+    padding: 1rem;
+}
+
+.content-heading::before {
+    position: absolute;
+    bottom: 10px;
+    background-color: var(--primary-color);
+    height: 3px;
+    border-radius: 50px;
+    content: '';
+    width: 60px;
+}
+
+
+/* developer information  */
+
+.dev-info {
+    margin: 1rem 0;
+    text-align: center;
+    opacity: 0.7;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.heart-pulse{
+    animation: pulse-red 1.5s infinite;
+}
+@keyframes pulse-red {
+    0% {
+      transform: scale(0.95);
+      filter: drop-shadow(0px 0px 0px rgb(245, 40, 40));
+
+    }
+    
+    70% {
+      transform: scale(1);
+      filter: drop-shadow(0px 0px 10px rgb(245, 40, 40));
+
+    }
+    
+    100% {
+      transform: scale(0.95);
+      filter: drop-shadow(0px 0px 25px rgb(245, 40, 40));
+        animation-duration: 0s;
+    }
+  }
