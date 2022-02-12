@@ -7,10 +7,11 @@ let siteMenu = $.querySelector('.site-menu')
 let siteMenuItem = siteMenu.getElementsByTagName('li')
 let imageMargin = $.querySelector('.avatar')
 let nameAndSocials = $.querySelector('.name-and-social-icon')
-let desktopSize = window.matchMedia("(min-width: 567px)");
+let arrowUpActive = $.querySelector('.arrow-up')
+let pageScrolled = false
+
 
 // site menu item active 
-
 function menuBtnFunction() {
     for (var i = 0; i < menuLine.length; i++) {
         menuLine[i].classList.toggle('active');
@@ -19,6 +20,7 @@ function menuBtnFunction() {
     menuBtn.classList.toggle('active')
     siteMenuItemActive()
 }
+
 menuBtn.addEventListener('click', menuBtnFunction);
 
 function siteMenuItemActive() {
@@ -31,11 +33,25 @@ function siteMenuItemActive() {
     }
 }
 
+// arrow up page func
+function scrolledDown() {
+    let scrollTop = $.documentElement.scrollTop
+    if (pageScrolled && scrollTop > 100) {
+        arrowUpActive.classList.add('arrow-up-active')
+    } else {
+        arrowUpActive.classList.remove('arrow-up-active')
+    }
+}
+window.addEventListener('scroll', scrolledDown)
+
+arrowUpActive.addEventListener('click', function(){
+    window.scrollTo(0,0)
+})
 
 // The profile image is scroll when scrolling the page
 function windowOnScroll() {
     let scrollTop = $.documentElement.scrollTop
-    if (scrollTop > 50) {
+    if (scrollTop > 100) {
         imageMargin.style.marginTop = '1rem'
         nameAndSocials.style.marginTop = '4rem'
     } else {
@@ -46,13 +62,13 @@ function windowOnScroll() {
 
 function myFunction(deviceWidth) {
     if (deviceWidth.matches) {
+        pageScrolled = true
         window.removeEventListener('scroll', windowOnScroll)
     } else {
         window.addEventListener('scroll', windowOnScroll)
-
+        pageScrolled = false
     }
 }
-
-let clientWidth = window.matchMedia("(max-width: 700px)")
+let clientWidth = window.matchMedia("(max-width: 1200px)")
 myFunction(clientWidth)
 clientWidth.addEventListener('change', myFunction)
