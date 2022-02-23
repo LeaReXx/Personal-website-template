@@ -1,13 +1,13 @@
 // Get Elements From HTML 
 const $ = document
-let menuBtn = $.querySelector('.menu-btn');
-let menuLine = menuBtn.querySelectorAll('.menu-line')
-let openMenu = $.querySelector('.list')
-let siteMenu = $.querySelector('.site-menu')
-let siteMenuItem = siteMenu.getElementsByTagName('li')
-let imageMargin = $.querySelector('.avatar')
-let nameAndSocials = $.querySelector('.name-and-social-icon')
-let arrowUpActive = $.querySelector('.arrow-up')
+const menuBtn = $.querySelector('.menu-btn');
+const menuLine = menuBtn.querySelectorAll('.menu-line')
+const openMenu = $.querySelector('.list')
+const siteMenu = $.querySelector('.site-menu')
+const siteMenuItem = siteMenu.getElementsByTagName('li')
+const imageMargin = $.querySelector('.avatar')
+const nameAndSocials = $.querySelector('.name-and-social-icon')
+const arrowUpActive = $.querySelector('.arrow-up')
 let pageScrolled = false
 
 
@@ -44,8 +44,8 @@ function scrolledDown() {
 }
 window.addEventListener('scroll', scrolledDown)
 
-arrowUpActive.addEventListener('click', function(){
-    window.scrollTo(0,0)
+arrowUpActive.addEventListener('click', function () {
+    window.scrollTo(0, 0)
 })
 
 // The profile image is scroll when scrolling the page

@@ -164,6 +164,7 @@
     filter: unset;
 }
 
+/* Responsived for min width 576px */
 @media screen and (min-width: 576px) {
     .my-skills-box {
         display: flex;
@@ -190,7 +191,7 @@
     }
 }
 
-
+/* Responsived for min width 992px */
 @media screen and (min-width: 992px) {
 
     .my-skills-box-main {

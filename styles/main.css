@@ -20,7 +20,10 @@ body {
     background-color: #F5F6F7;
     color: var(--font-color);
 }
-
+::selection {
+    color: var(--primary-color);
+    background: none;
+}
 button {
     font-family: inherit;
     box-sizing: border-box;
@@ -43,7 +46,9 @@ a {
 ul li {
     list-style: none;
 }
-
+img {
+    user-select: none;
+}
 .main {
 
     position: relative;
@@ -399,7 +404,7 @@ ul li {
 
 .content-heading {
     font-family: secondary-font;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     position: relative;
     padding: 1rem;
@@ -409,10 +414,10 @@ ul li {
     position: absolute;
     bottom: 10px;
     background-color: var(--primary-color);
-    height: 3px;
+    height: 4px;
     border-radius: 50px;
     content: '';
-    width: 60px;
+    width: 50px;
 }
 
 /* arrow up */
@@ -472,7 +477,7 @@ ul li {
 }
 
 
-
+/* Responsived for min width 576px */
 @media screen and (min-width: 576px) {
     .right-container {
         width: 510px;
@@ -666,6 +671,7 @@ ul li {
 }
 
 
+/* Responsived for min width 768px */
 @media screen and (min-width: 768px) {
     .right-container {
         width: 690px;
@@ -694,6 +700,7 @@ ul li {
     }
 }
 
+/* Responsived for min width 992px */
 @media screen and (min-width: 992px) {
     .right-container {
         width: 930px;
@@ -713,7 +720,7 @@ ul li {
     }
 }
 
-
+/* Responsived for min width 1200px */
 @media screen and (min-width: 1200px) {
     .main-section {
         display: flex;
