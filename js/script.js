@@ -72,3 +72,10 @@ function myFunction(deviceWidth) {
 let clientWidth = window.matchMedia("(max-width: 1200px)")
 myFunction(clientWidth)
 clientWidth.addEventListener('change', myFunction)
+
+// right box hover info 
+tippy('.my-info-box-hover', {
+    placement: 'top',
+    followCursor: 'horizontal',
+    animation: 'fade',
+});
