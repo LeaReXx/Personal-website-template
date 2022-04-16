@@ -1,0 +1,156 @@
+/* ==================
+==========================
+================================
+>> These styles are for the CV page only <<
+================================
+==========================
+================== */
+
+/* my cv Styles  */
+.mycv {
+  padding: 2rem 20px;
+  text-align: unset;
+}
+
+.education {
+  margin-bottom: 1rem;
+}
+
+.cv-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cv-heading-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 1rem;
+}
+
+.cv-heading-txt {
+  font-size: 25px;
+  font-family: secondary-font;
+  font-weight: 700;
+}
+
+.cv-place {
+  padding-right: 1.5rem;
+  margin-right: 1rem;
+  border-right: 1px;
+  border-right-color: rgba(182, 182, 182, 0.589);
+  border-right-style: solid;
+  padding-bottom: 20px;
+}
+
+.cv-place-heading {
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+  top: -10px;
+}
+
+.cv-place-heading::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50px;
+  position: absolute;
+  right: -31px;
+  top: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 0.1875rem rgb(48 76 253 / 25%);
+}
+
+.cv-place-date {
+  font-size: 16px;
+  color: #808080;
+}
+
+.cv-place-description {
+  font-size: 15px;
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+.cv-place:last-child {
+  border: 0;
+}
+
+.my-skills {
+  background-color: var(--secondary-color);
+  padding: 2rem 1rem;
+}
+
+.design-skill,
+.programing-skill {
+  margin: 1rem 0;
+}
+
+.skills-heading-txt {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: secondary-font;
+  margin-bottom: 1rem;
+}
+
+.skill-progress-parent {
+  width: auto;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.skill-progress {
+  background-color: var(--secondary-color);
+  width: 90%;
+  height: 25px;
+  margin: 0.5rem;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress > span {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.progress-now {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  z-index: 2;
+  transition: all 1s;
+  user-select: none;
+}
+
+@media screen and (min-width: 992px) {
+  .mycv {
+    display: flex;
+  }
+
+  .my-skills {
+    display: flex;
+  }
+
+  .design-skill,
+  .programing-skill {
+    margin: 0 1rem;
+    width: 50%;
+  }
+}
