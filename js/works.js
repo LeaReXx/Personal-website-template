@@ -99,10 +99,11 @@ function worksGalleryHandler() {
     galleryCreateHandler();
   });
 }
+
+// gallery Element Creator 
 let worksFragment = $.createDocumentFragment();
 let worksGallery = $.querySelector(".works-gallery");
 let galleryImagesParent = $.querySelectorAll;
-
 function galleryCreateHandler() {
   worksGallery.innerHTML = "";
   filtered.forEach(function (work) {
@@ -141,6 +142,7 @@ function galleryCreateHandler() {
   worksGallery.appendChild(worksFragment);
 }
 
+// gallery image modal
 window.addEventListener("load", galleryCreateHandler);
 let galleryModal = $.querySelector(".gallery-modal");
 let galleryModalimage = $.querySelector(".gallery-modal-image");
