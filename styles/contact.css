@@ -1,0 +1,138 @@
+form,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+textarea {
+  resize: none;
+}
+.contact {
+  margin-top: 1rem;
+}
+
+.map-parent {
+  text-align: center;
+}
+
+.map {
+  width: 95%;
+  min-height: 250px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .map {
+    min-height: 350px;
+  }
+}
+
+.contact-form-parent {
+  padding: 2rem 1rem;
+}
+
+.contact-form-title {
+  font-family: secondary-font;
+}
+
+.contact-form-information {
+  width: 100%;
+}
+
+.contact-form-name-parent,
+.contact-form-email-parent,
+.contact-form-textarea-parent {
+  position: relative;
+  width: 90%;
+  margin: 1rem auto;
+}
+.contact-form-name-parent .fa-user,
+.contact-form-email-parent .fa-envelope {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  opacity: 0.8;
+  transition: all 0.1s;
+}
+#contact-form-name,
+#contact-form-email {
+  padding: 10px 45px 10px 0;
+}
+#contact-form-name,
+#contact-form-email,
+#contact-form-textarea {
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: 0;
+  background-color: #f9f9ff;
+  transition: all 0.1s;
+}
+.contact-form-name-parent:hover.contact-form-name-parent .fa-user,
+.contact-form-email-parent:hover.contact-form-email-parent .fa-envelope {
+  opacity: 1;
+}
+#contact-form-name:focus,
+#contact-form-email:focus,
+#contact-form-textarea:focus {
+  background-color: #e8f0fe;
+}
+
+#contact-form-textarea {
+  min-height: 200px;
+  padding: 8px 10px;
+}
+
+.contact-form-submit-parent {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-form-submit {
+  width: 90%;
+  margin: unset;
+}
+
+.fa-paper-plane {
+  margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form-information {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .contact-form-name-parent,
+  .contact-form-email-parent {
+    max-width: 50%;
+  }
+  .contact-form-name-parent {
+    margin-left: 10px;
+  }
+
+  .contact-form-email-parent {
+    margin-right: 10px;
+  }
+
+  .contact-form-submit-parent {
+    justify-content: left;
+    width: 95%;
+  }
+
+  .contact-form-submit {
+    width: 160px;
+  }
+}
+
+.ajs-message,
+.ajs-success,
+.ajs-visible {
+  border-radius: 10px !important;
+  font-family: inherit !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
