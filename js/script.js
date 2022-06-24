@@ -79,3 +79,10 @@ tippy('.my-info-box-hover', {
     followCursor: 'horizontal',
     animation: 'fade',
 });
+
+// Pre Loader 
+let preloader = $.querySelector('.preloader')
+window.addEventListener('load', function(){
+    preloader.style.visibility = 'hidden';
+})
+console.log(preloader)

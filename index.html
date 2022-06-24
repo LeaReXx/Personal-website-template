@@ -1,358 +1,413 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal website template</title>
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/fonts.css">
-    <link rel="stylesheet" href="/styles/about-me.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/about-me.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <script src="/js/script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- /start» Pre Loader -->
+    <div class="preloader">
+      <div class="preloader__wrap">
+        <div class="circle-pulse">
+          <div class="circle-pulse__1"></div>
+          <div class="circle-pulse__2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Pre Loader «end/ -->
+
     <!-- /start» Main Container -->
     <main class="main">
-        <img src="/img/triangles-top.png" alt="triangles top" class="background-image bg-img-top-right">
-        <img src="/img/triangles-bottom.png" alt="triangles bottom" class="background-image bg-img-buttom-left">
-        <!-- /start» Right Container -->
-        <section class="main-section">
-            <aside>
-                <div class="right-side">
-                    <div class="right-container">
-                        <div class="profile-img">
-                            <svg class="avatar" viewbox="0 0 188 188">
-                                <g>
-                                    <image xlink:href="/img/profile.jpg" height="100%" width="100%"
-                                        title="Profile Image">
-                                    </image>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="name-and-social-icon">
-                            <h1 class="name">لوک اسکای واکر</h1>
-                            <p class="badge">استاد جدای</p>
-                            <div class="social-icon">
-                                <a href="#"><i class="fab fa-telegram-plane social-icon-item"></i></a>
-                                <a href="#"><i class="fab fa-twitter social-icon-item"></i></a>
-                                <a href="#"><i class="fab fa-instagram social-icon-item"></i></a>
-                            </div>
-                        </div>
-                        <div class="information">
-                            <div class="my-info-box-father">
-                                <div class="my-info my-info-box-hover" data-tippy-content="تاریخ تولد">
-                                    <p><i class="fas fa-birthday-cake my-info-item-icons fa-fw"></i>28 شهریور 1379</p>
-                                </div>
-                                <div class="my-info my-info-box-hover" data-tippy-content="لوکیشن">
-                                    <p><i class="fas fa-map-marker-alt my-info-item-icons fa-fw"></i>تهران, ایران</p>
-                                </div>
-                                <div class="my-info my-info-box-hover" data-tippy-content="تلفن">
-                                    <p><i class="fas fa-mobile-alt my-info-item-icons fa-fw"></i>1-135654875+</p>
-                                </div>
-                                <div class="my-info my-info-box-hover" data-tippy-content="ایمیل">
-                                    <p><a href="#"><i
-                                                class="fas fa-envelope my-info-item-icons fa-fw"></i>Myemail@gmail.com</a>
-                                    </p>
-                                </div>
-                                <div class="my-info my-info-box-hover" data-tippy-content="گیت هاب">
-                                    <p><a href="#"><i class="fab fa-github my-info-item-icons fa-fw"></i>LeaReXx</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="mycv">
-                                <button class="my-cv-btn"><i class="fas fa-file-download"></i>دریافت رزومه</button>
-                            </div>
-                        </div>
-                    </div>
+      <img
+        src="/img/triangles-top.png"
+        alt="triangles top"
+        class="background-image bg-img-top-right"
+      />
+      <img
+        src="/img/triangles-bottom.png"
+        alt="triangles bottom"
+        class="background-image bg-img-buttom-left"
+      />
+      <!-- /start» Right Container -->
+      <section class="main-section">
+        <aside>
+          <div class="right-side">
+            <div class="right-container">
+              <div class="profile-img">
+                <svg class="avatar" viewbox="0 0 188 188">
+                  <g>
+                    <image
+                      xlink:href="/img/profile.jpg"
+                      height="100%"
+                      width="100%"
+                      title="Profile Image"
+                    ></image>
+                  </g>
+                </svg>
+              </div>
+              <div class="name-and-social-icon">
+                <h1 class="name">لوک اسکای واکر</h1>
+                <p class="badge">استاد جدای</p>
+                <div class="social-icon">
+                  <a href="#"><i class="fab fa-telegram-plane social-icon-item"></i></a>
+                  <a href="#"><i class="fab fa-twitter social-icon-item"></i></a>
+                  <a href="#"><i class="fab fa-instagram social-icon-item"></i></a>
                 </div>
-            </aside>
-            <!-- Right Container «end/ -->
-            <!-- /start» Section Left For Page Content  -->
-            <section>
-                <div class="left-container">
-                    <!-- /start» Humberger Menu  -->
-                    <div class="circle-menu">
-                        <div class="humberger">
-                            <div class="menu-btn">
-                                <div class="menu-line line-1"></div>
-                                <div class="menu-line line-2"></div>
-                                <div class="menu-line line-3"></div>
-
-                            </div>
-                        </div>
-                        <div class="list">
-                            <ul class="site-menu">
-                                <li class="menu-out-anim"><a href="">درباره من</a></li>
-                                <li class="menu-out-anim"><a href="">رزومه</a></li>
-                                <li class="menu-out-anim"><a href="">نمونه کارها</a></li>
-                                <li class="menu-out-anim"><a href="">تماس</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Humberger Menu «end/ -->
-                    <div class="content">
-                        <h2 class="content-heading">درباره من</h2>
-                        <div class="about-me">
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است.
-                            </p>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است.
-                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                            </p>
-                            <p>
-                                کتابهای زیادی در
-                                شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
-                                افزارها
-                                شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
-                                فارسی
-                                ایجاد کرد.
-                            </p>
-                        </div>
-                        <div class="my-skills">
-                            <h2 class="my-skills-heading">کارهایی که میکنم</h2>
-                            <div class="my-skills-box-main">
-                                <div class="my-skills-box">
-                                    <img src="/img/icon-design.png" alt="Web Design" class="my-skills-box-icon">
-                                    <div class="inside-boxs-txt">
-                                        <h3 class="inside-box-heading">طراحی وب</h3>
-                                        <p class="inside-box-txt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                            چاپ
-                                            و با استفاده از طراحان گرافیک است.</p>
-                                    </div>
-                                </div>
-                                <div class="my-skills-box">
-                                    <img src="/img/icon-dev.png" alt="Web Development" class="my-skills-box-icon">
-                                    <div class="inside-boxs-txt">
-                                        <h3 class="inside-box-heading">توسعه وب</h3>
-                                        <p class="inside-box-txt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                            چاپ
-                                            و با استفاده از طراحان گرافیک است.</p>
-                                    </div>
-                                </div>
-                                <div class="my-skills-box">
-                                    <img src="/img/icon-app.png" alt="Mobile App" class="my-skills-box-icon">
-                                    <div class="inside-boxs-txt">
-                                        <h3 class="inside-box-heading">برنامه های موبایل</h3>
-                                        <p class="inside-box-txt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                            چاپ
-                                            و با استفاده از طراحان گرافیک است.</p>
-                                    </div>
-                                </div>
-                                <div class="my-skills-box">
-                                    <img src="/img/icon-photo.png" alt="Photography" class="my-skills-box-icon">
-                                    <div class="inside-boxs-txt">
-                                        <h3 class="inside-box-heading">عکاسی</h3>
-                                        <p class="inside-box-txt">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-                                            چاپ
-                                            و با استفاده از طراحان گرافیک است.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /start» Customer Feedback  -->
-                        <div class="feedback">
-                            <h2 class="feedback-heading">سخن مشتریان</h2>
-                            <div class="swiper feedback-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="feedback-box">
-                                            <div class="feedback-box-avatar-name">
-                                                <div class="feedback-box-avatar-shadow">
-                                                    <div class="feedback-box-avatar">
-                                                        <svg class="feedback-box-avatar-image" viewbox="0 0 188 188">
-                                                            <image xlink:href="/img/kenobi.jpg" title="Profile Image">
-                                                            </image>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="feedback-box-name">
-                                                    <p>اوبی وان کنوبی</p>
-                                                    <div class="left-qoute">
-                                                        <i class="fas fa-quote-left"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="feedback-box-customer">
-                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                    استفاده از
-                                                    طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                    سطرآنچنان که لازم است</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="feedback-box">
-                                            <div class="feedback-box-avatar-name">
-                                                <div class="feedback-box-avatar-shadow">
-                                                    <div class="feedback-box-avatar">
-                                                        <svg class="feedback-box-avatar-image" viewbox="0 0 200 188">
-                                                            <image xlink:href="/img/vider.jpg" title="Profile Image">
-                                                            </image>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="feedback-box-name">
-                                                    <p>دارث ویدر</p>
-                                                    <div class="left-qoute">
-                                                        <i class="fas fa-quote-left"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="feedback-box-customer">
-                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                    استفاده از
-                                                    طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                    سطرآنچنان که لازم است</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="feedback-box">
-                                            <div class="feedback-box-avatar-name">
-                                                <div class="feedback-box-avatar-shadow">
-                                                    <div class="feedback-box-avatar">
-                                                        <svg class="feedback-box-avatar-image" viewbox="0 0 188 188">
-                                                            <image xlink:href="/img/sedius.jpg" title="Profile Image">
-                                                            </image>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="feedback-box-name">
-                                                    <p>دارت سیدیوس</p>
-                                                    <div class="left-qoute">
-                                                        <i class="fas fa-quote-left"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="feedback-box-customer">
-                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                    استفاده از
-                                                    طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                    سطرآنچنان که لازم است</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="feedback-box">
-                                            <div class="feedback-box-avatar-name">
-                                                <div class="feedback-box-avatar-shadow">
-                                                    <div class="feedback-box-avatar">
-                                                        <svg class="feedback-box-avatar-image" viewbox="0 0 188 188">
-                                                            <image xlink:href="/img/yoda.jpg" title="Profile Image">
-                                                            </image>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="feedback-box-name">
-                                                    <p>استاد یودا</p>
-                                                    <div class="left-qoute">
-                                                        <i class="fas fa-quote-left"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="feedback-box-customer">
-                                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                    استفاده از
-                                                    طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                    سطرآنچنان که لازم است</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                        <!-- Customer Feedback «end/ -->
-
-
-                        <!-- /start» Customers  -->
-                        <div class="customers">
-                            <h2 class="customers-heading">مشتریان</h2>
-                            <div class="swiper customers-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customerts-logo">
-                                            <img src="/img/google.png" alt="Company Logo" class="customers-logo-parent">
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                        <!-- Customers «end/ -->
-
-                    </div>
-
+              </div>
+              <div class="information">
+                <div class="my-info-box-father">
+                  <div class="my-info my-info-box-hover" data-tippy-content="تاریخ تولد">
+                    <p>
+                      <i class="fas fa-birthday-cake my-info-item-icons fa-fw"></i>28 شهریور 1379
+                    </p>
+                  </div>
+                  <div class="my-info my-info-box-hover" data-tippy-content="لوکیشن">
+                    <p>
+                      <i class="fas fa-map-marker-alt my-info-item-icons fa-fw"></i>تهران, ایران
+                    </p>
+                  </div>
+                  <div class="my-info my-info-box-hover" data-tippy-content="تلفن">
+                    <p><i class="fas fa-mobile-alt my-info-item-icons fa-fw"></i>1-135654875+</p>
+                  </div>
+                  <div class="my-info my-info-box-hover" data-tippy-content="ایمیل">
+                    <p>
+                      <a href="#"
+                        ><i class="fas fa-envelope my-info-item-icons fa-fw"></i
+                        >Myemail@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                  <div class="my-info my-info-box-hover" data-tippy-content="گیت هاب">
+                    <p>
+                      <a href="#"><i class="fab fa-github my-info-item-icons fa-fw"></i>LeaReXx</a>
+                    </p>
+                  </div>
                 </div>
-
-                <!-- /start» Footer  -->
-                <footer>
-                    <p class="dev-info">ساخته شده با <span class="heart-pulse">❤️</span> توسط سپهر</p>
-                </footer>
-                <!-- Footer «end/ -->
+                <div class="mycv">
+                  <button class="my-cv-btn">
+                    <i class="fas fa-file-download"></i>دریافت رزومه
+                  </button>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!-- Right Container «end/ -->
+        <!-- /start» Section Left For Page Content  -->
+        <section>
+          <div class="left-container">
+            <!-- /start» Humberger Menu  -->
+            <div class="circle-menu">
+              <div class="humberger">
+                <div class="menu-btn">
+                  <div class="menu-line line-1"></div>
+                  <div class="menu-line line-2"></div>
+                  <div class="menu-line line-3"></div>
+                </div>
+              </div>
+              <div class="list">
+                <ul class="site-menu">
+                  <li class="menu-out-anim"><a href="">درباره من</a></li>
+                  <li class="menu-out-anim"><a href="">رزومه</a></li>
+                  <li class="menu-out-anim"><a href="">نمونه کارها</a></li>
+                  <li class="menu-out-anim"><a href="">تماس</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Humberger Menu «end/ -->
+            <div class="content">
+              <h2 class="content-heading">درباره من</h2>
+              <div class="about-me">
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                  گرافیک است.
+                </p>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                  گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                  برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                  می باشد.
+                </p>
+                <p>
+                  کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                  می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                  خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </p>
+              </div>
+              <div class="my-skills">
+                <h2 class="my-skills-heading">کارهایی که میکنم</h2>
+                <div class="my-skills-box-main">
+                  <div class="my-skills-box">
+                    <img src="/img/icon-design.png" alt="Web Design" class="my-skills-box-icon" />
+                    <div class="inside-boxs-txt">
+                      <h3 class="inside-box-heading">طراحی وب</h3>
+                      <p class="inside-box-txt">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my-skills-box">
+                    <img src="/img/icon-dev.png" alt="Web Development" class="my-skills-box-icon" />
+                    <div class="inside-boxs-txt">
+                      <h3 class="inside-box-heading">توسعه وب</h3>
+                      <p class="inside-box-txt">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my-skills-box">
+                    <img src="/img/icon-app.png" alt="Mobile App" class="my-skills-box-icon" />
+                    <div class="inside-boxs-txt">
+                      <h3 class="inside-box-heading">برنامه های موبایل</h3>
+                      <p class="inside-box-txt">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="my-skills-box">
+                    <img src="/img/icon-photo.png" alt="Photography" class="my-skills-box-icon" />
+                    <div class="inside-boxs-txt">
+                      <h3 class="inside-box-heading">عکاسی</h3>
+                      <p class="inside-box-txt">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                        طراحان گرافیک است.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /start» Customer Feedback  -->
+              <div class="feedback">
+                <h2 class="feedback-heading">سخن مشتریان</h2>
+                <div class="swiper feedback-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="feedback-box">
+                        <div class="feedback-box-avatar-name">
+                          <div class="feedback-box-avatar-shadow">
+                            <div class="feedback-box-avatar">
+                              <svg class="feedback-box-avatar-image" viewbox="0 0 188 188">
+                                <image xlink:href="/img/kenobi.jpg" title="Profile Image"></image>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="feedback-box-name">
+                            <p>اوبی وان کنوبی</p>
+                            <div class="left-qoute">
+                              <i class="fas fa-quote-left"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feedback-box-customer">
+                          <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feedback-box">
+                        <div class="feedback-box-avatar-name">
+                          <div class="feedback-box-avatar-shadow">
+                            <div class="feedback-box-avatar">
+                              <svg class="feedback-box-avatar-image" viewbox="0 0 200 188">
+                                <image xlink:href="/img/vider.jpg" title="Profile Image"></image>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="feedback-box-name">
+                            <p>دارث ویدر</p>
+                            <div class="left-qoute">
+                              <i class="fas fa-quote-left"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feedback-box-customer">
+                          <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feedback-box">
+                        <div class="feedback-box-avatar-name">
+                          <div class="feedback-box-avatar-shadow">
+                            <div class="feedback-box-avatar">
+                              <svg class="feedback-box-avatar-image" viewbox="0 0 188 188">
+                                <image xlink:href="/img/sedius.jpg" title="Profile Image"></image>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="feedback-box-name">
+                            <p>دارت سیدیوس</p>
+                            <div class="left-qoute">
+                              <i class="fas fa-quote-left"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feedback-box-customer">
+                          <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feedback-box">
+                        <div class="feedback-box-avatar-name">
+                          <div class="feedback-box-avatar-shadow">
+                            <div class="feedback-box-avatar">
+                              <svg class="feedback-box-avatar-image" viewbox="0 0 188 188">
+                                <image xlink:href="/img/yoda.jpg" title="Profile Image"></image>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="feedback-box-name">
+                            <p>استاد یودا</p>
+                            <div class="left-qoute">
+                              <i class="fas fa-quote-left"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feedback-box-customer">
+                          <p>
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                            از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                            سطرآنچنان که لازم است
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- Customer Feedback «end/ -->
+
+              <!-- /start» Customers  -->
+              <div class="customers">
+                <h2 class="customers-heading">مشتریان</h2>
+                <div class="swiper customers-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="customerts-logo">
+                        <img
+                          src="/img/google.png"
+                          alt="Company Logo"
+                          class="customers-logo-parent"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- Customers «end/ -->
+            </div>
+          </div>
+
+          <!-- /start» Footer  -->
+          <footer>
+            <p class="dev-info">ساخته شده با <span class="heart-pulse">❤️</span> توسط سپهر</p>
+          </footer>
+          <!-- Footer «end/ -->
         </section>
-        <!-- Section Left For Page Content «end/ -->
+      </section>
+      <!-- Section Left For Page Content «end/ -->
 
-        <!-- /start» Arrow Up  -->
-        <div class="arrow-up">
-            <i class="fa-solid fa-chevron-up"></i>
-        </div>
-        <!-- Arrow Up «end/ -->
-
+      <!-- /start» Arrow Up  -->
+      <div class="arrow-up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <!-- Arrow Up «end/ -->
     </main>
     <!-- Main Container «end/ -->
 
@@ -361,7 +416,7 @@
     <script src="/lib/tippy/tippy-bundle.umd.min.js"></script>
     <script src="lib/swiper/swiper-bundle.min.js"></script>
     <script src="/js/about.js"></script>
+    <script src="/js/script.js"></script>
     <!-- Scripts «end/ -->
-</body>
-
+  </body>
 </html>
