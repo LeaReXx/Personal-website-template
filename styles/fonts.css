@@ -1,39 +1,38 @@
 /* primary font (iranyekan) */
 @font-face {
-    font-family: primary-font;
-    src: url(../fonts/iran-yekan/eot/iran-yekan-400.eot),
-        url(../fonts/iran-yekan/ttf/iran-yekan-400.ttf) format('truetype'),
-        url(../fonts/iran-yekan/woff/iran-yekan-400.woff) format('woff'),
-        url(../fonts/iran-yekan/woff2/iran-yekan-400.woff2) format('woff2');
-    font-weight: 400;
+  font-family: primary-font;
+  src: url(../fonts/iran-yekan/eot/iran-yekan-400.eot),
+    url(../fonts/iran-yekan/ttf/iran-yekan-400.ttf) format("truetype"),
+    url(../fonts/iran-yekan/woff/iran-yekan-400.woff) format("woff"),
+    url(../fonts/iran-yekan/woff2/iran-yekan-400.woff2) format("woff2");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: primary-font;
-    src: url(../fonts/iran-yekan/eot/iran-yekan-700.eot),
-        url(../fonts/iran-yekan/ttf/iran-yekan-700.ttf) format('truetype'),
-        url(../fonts/iran-yekan/woff/iran-yekan-700.woff) format('woff'),
-        url(../fonts/iran-yekan/woff2/iran-yekan-700.woff2) format('woff2');
-    font-weight: 700;
+  font-family: primary-font;
+  src: url(../fonts/iran-yekan/eot/iran-yekan-700.eot),
+    url(../fonts/iran-yekan/ttf/iran-yekan-700.ttf) format("truetype"),
+    url(../fonts/iran-yekan/woff/iran-yekan-700.woff) format("woff"),
+    url(../fonts/iran-yekan/woff2/iran-yekan-700.woff2) format("woff2");
+  font-weight: 700;
 }
-
 
 /* secondary font (pinar) */
 
 @font-face {
-    font-family: secondary-font;
-    src: url(../fonts/pinar/eot/pinar-400.eot),
-        url(../fonts/pinar/ttf/pinar-400.ttf),
-        url(../fonts/pinar/woff/pinar-400.woff),
-        url(../fonts/pinar/woff2/pinar-400.woff2);
-    font-weight: 400;
+  font-family: secondary-font;
+  src: url(../fonts/pinar/eot/pinar-400.eot),
+    url(../fonts/pinar/ttf/pinar-400.ttf),
+    url(../fonts/pinar/woff/pinar-400.woff),
+    url(../fonts/pinar/woff2/pinar-400.woff2);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: secondary-font;
-    src: url(../fonts/pinar/eot/pinar-700.eot),
-        url(../fonts/pinar/ttf/pinar-700.ttf),
-        url(../fonts/pinar/woff/pinar-700.woff),
-        url(../fonts/pinar/woff2/pinar-700.woff2);
-    font-weight: 700;
+  font-family: secondary-font;
+  src: url(../fonts/pinar/eot/pinar-700.eot),
+    url(../fonts/pinar/ttf/pinar-700.ttf),
+    url(../fonts/pinar/woff/pinar-700.woff),
+    url(../fonts/pinar/woff2/pinar-700.woff2);
+  font-weight: 700;
 }

@@ -100,14 +100,18 @@ function worksGalleryHandler() {
   });
 }
 
-// gallery Element Creator 
+// gallery Element Creator
 let worksFragment = $.createDocumentFragment();
 let worksGallery = $.querySelector(".works-gallery");
 let galleryImagesParent = $.querySelectorAll;
 function galleryCreateHandler() {
   worksGallery.innerHTML = "";
   filtered.forEach(function (work) {
-    let galleryImageParent, galleryImage, galleryImgs, galleryTitle, galleryDescription;
+    let galleryImageParent,
+      galleryImage,
+      galleryImgs,
+      galleryTitle,
+      galleryDescription;
 
     galleryImageParent = $.createElement("div");
     galleryImageParent.classList = "gallery-image-parent";

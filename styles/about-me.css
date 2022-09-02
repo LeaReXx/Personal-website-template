@@ -8,203 +8,372 @@
 
 /* About Me  */
 .about-me {
-    margin: 0 1rem 1rem 1rem;
-    line-height: 2;
-    text-align: justify;
+  margin: 0 1rem 1rem 1rem;
+  line-height: 2;
+  text-align: justify;
 }
 
 /* skills box  */
 .my-skills {
-    width: 100%;
-    background-color: #f5f8f9;
+  width: 100%;
+  background-color: #f5f8f9;
 }
 
 .my-skills-heading,
 .feedback-heading,
 .customers-heading {
-    padding: 1rem;
-    font-family: secondary-font;
-    font-size: 23px;
+  padding: 1rem;
+  font-family: secondary-font;
+  font-size: 23px;
 }
 
 .my-skills-box-main {
-    width: 100%;
-    padding: 0 1rem;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .my-skills-box {
-    text-align: center;
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 15px;
-    background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .my-skills-box-icon {
-    user-select: none;
-    width: 48px;
+  user-select: none;
+  width: 48px;
 }
 
 .inside-box-heading {
-    font-family: secondary-font;
-    margin-bottom: 0.5rem;
-    font-size: 18px;
+  font-family: secondary-font;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
 }
 
 /* customer feedback */
 .feedback-box {
-    width: 90%;
-    margin: 3rem auto;
-    border-radius: 20px;
-    background-color: var(--secondary-color);
+  width: 90%;
+  margin: 3rem auto;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
 }
 
 .feedback-box-avatar-name {
-    position: relative;
+  position: relative;
 }
 
 .feedback-box-avatar-shadow {
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.356));
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.356));
 }
 
 .feedback-box-avatar {
-    position: absolute;
-    top: -35px;
-    right: 20px;
-    width: 72px;
-    height: 72px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    filter: drop-shadow(36px 38px 28px #000000);
-    -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  width: 72px;
+  height: 72px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(36px 38px 28px #000000);
+  -webkit-clip-path: polygon(
+    92.32051% 40%,
+    93.79385% 43.1596%,
+    94.69616% 46.52704%,
+    95% 50%,
+    94.69616% 53.47296%,
+    93.79385% 56.8404%,
+    92.32051% 60%,
+    79.82051% 81.65064%,
+    77.82089% 84.50639%,
+    75.35575% 86.97152%,
+    72.5% 88.97114%,
+    69.3404% 90.44449%,
+    65.97296% 91.34679%,
+    62.5% 91.65064%,
+    37.5% 91.65064%,
+    34.02704% 91.34679%,
+    30.6596% 90.44449%,
+    27.5% 88.97114%,
+    24.64425% 86.97152%,
+    22.17911% 84.50639%,
+    20.17949% 81.65064%,
+    7.67949% 60%,
+    6.20615% 56.8404%,
+    5.30384% 53.47296%,
+    5% 50%,
+    5.30384% 46.52704%,
+    6.20615% 43.1596%,
+    7.67949% 40%,
+    20.17949% 18.34936%,
+    22.17911% 15.49361%,
+    24.64425% 13.02848%,
+    27.5% 11.02886%,
+    30.6596% 9.55551%,
+    34.02704% 8.65321%,
+    37.5% 8.34936%,
+    62.5% 8.34936%,
+    65.97296% 8.65321%,
+    69.3404% 9.55551%,
+    72.5% 11.02886%,
+    75.35575% 13.02848%,
+    77.82089% 15.49361%,
+    79.82051% 18.34936%
+  );
+  clip-path: polygon(
+    92.32051% 40%,
+    93.79385% 43.1596%,
+    94.69616% 46.52704%,
+    95% 50%,
+    94.69616% 53.47296%,
+    93.79385% 56.8404%,
+    92.32051% 60%,
+    79.82051% 81.65064%,
+    77.82089% 84.50639%,
+    75.35575% 86.97152%,
+    72.5% 88.97114%,
+    69.3404% 90.44449%,
+    65.97296% 91.34679%,
+    62.5% 91.65064%,
+    37.5% 91.65064%,
+    34.02704% 91.34679%,
+    30.6596% 90.44449%,
+    27.5% 88.97114%,
+    24.64425% 86.97152%,
+    22.17911% 84.50639%,
+    20.17949% 81.65064%,
+    7.67949% 60%,
+    6.20615% 56.8404%,
+    5.30384% 53.47296%,
+    5% 50%,
+    5.30384% 46.52704%,
+    6.20615% 43.1596%,
+    7.67949% 40%,
+    20.17949% 18.34936%,
+    22.17911% 15.49361%,
+    24.64425% 13.02848%,
+    27.5% 11.02886%,
+    30.6596% 9.55551%,
+    34.02704% 8.65321%,
+    37.5% 8.34936%,
+    62.5% 8.34936%,
+    65.97296% 8.65321%,
+    69.3404% 9.55551%,
+    72.5% 11.02886%,
+    75.35575% 13.02848%,
+    77.82089% 15.49361%,
+    79.82051% 18.34936%
+  );
 }
 
 .feedback-box-avatar-image {
-    width: 65px;
-    height: 65px;
-    -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-
+  width: 65px;
+  height: 65px;
+  -webkit-clip-path: polygon(
+    92.32051% 40%,
+    93.79385% 43.1596%,
+    94.69616% 46.52704%,
+    95% 50%,
+    94.69616% 53.47296%,
+    93.79385% 56.8404%,
+    92.32051% 60%,
+    79.82051% 81.65064%,
+    77.82089% 84.50639%,
+    75.35575% 86.97152%,
+    72.5% 88.97114%,
+    69.3404% 90.44449%,
+    65.97296% 91.34679%,
+    62.5% 91.65064%,
+    37.5% 91.65064%,
+    34.02704% 91.34679%,
+    30.6596% 90.44449%,
+    27.5% 88.97114%,
+    24.64425% 86.97152%,
+    22.17911% 84.50639%,
+    20.17949% 81.65064%,
+    7.67949% 60%,
+    6.20615% 56.8404%,
+    5.30384% 53.47296%,
+    5% 50%,
+    5.30384% 46.52704%,
+    6.20615% 43.1596%,
+    7.67949% 40%,
+    20.17949% 18.34936%,
+    22.17911% 15.49361%,
+    24.64425% 13.02848%,
+    27.5% 11.02886%,
+    30.6596% 9.55551%,
+    34.02704% 8.65321%,
+    37.5% 8.34936%,
+    62.5% 8.34936%,
+    65.97296% 8.65321%,
+    69.3404% 9.55551%,
+    72.5% 11.02886%,
+    75.35575% 13.02848%,
+    77.82089% 15.49361%,
+    79.82051% 18.34936%
+  );
+  clip-path: polygon(
+    92.32051% 40%,
+    93.79385% 43.1596%,
+    94.69616% 46.52704%,
+    95% 50%,
+    94.69616% 53.47296%,
+    93.79385% 56.8404%,
+    92.32051% 60%,
+    79.82051% 81.65064%,
+    77.82089% 84.50639%,
+    75.35575% 86.97152%,
+    72.5% 88.97114%,
+    69.3404% 90.44449%,
+    65.97296% 91.34679%,
+    62.5% 91.65064%,
+    37.5% 91.65064%,
+    34.02704% 91.34679%,
+    30.6596% 90.44449%,
+    27.5% 88.97114%,
+    24.64425% 86.97152%,
+    22.17911% 84.50639%,
+    20.17949% 81.65064%,
+    7.67949% 60%,
+    6.20615% 56.8404%,
+    5.30384% 53.47296%,
+    5% 50%,
+    5.30384% 46.52704%,
+    6.20615% 43.1596%,
+    7.67949% 40%,
+    20.17949% 18.34936%,
+    22.17911% 15.49361%,
+    24.64425% 13.02848%,
+    27.5% 11.02886%,
+    30.6596% 9.55551%,
+    34.02704% 8.65321%,
+    37.5% 8.34936%,
+    62.5% 8.34936%,
+    65.97296% 8.65321%,
+    69.3404% 9.55551%,
+    72.5% 11.02886%,
+    75.35575% 13.02848%,
+    77.82089% 15.49361%,
+    79.82051% 18.34936%
+  );
 }
 
 .feedback-box-avatar-image image {
-    width: 100%;
+  width: 100%;
 }
 
 .feedback-box-name {
-    font-size: 18px;
-    font-weight: 700;
-    position: relative;
-    width: 100%;
-    padding: 2rem 1.5rem 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+  padding: 2rem 1.5rem 0 0;
 }
 
 .left-qoute {
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    font-size: 25px;
-    color: var(--primary-color);
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 25px;
+  color: var(--primary-color);
 }
 
 .feedback-box-customer {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 1rem 1.5rem;
-    margin: auto;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+  margin: auto;
 }
 
 .swiper-pagination-bullet {
-    width: 7px !important;
-    height: 7px !important;
+  width: 7px !important;
+  height: 7px !important;
 }
 
 .swiper-pagination-bullet-active {
-    transition: all 0.5s ease !important;
-    background-color: var(--primary-color) !important;
-    width: 15px !important;
-    border-radius: 50px !important;
+  transition: all 0.5s ease !important;
+  background-color: var(--primary-color) !important;
+  width: 15px !important;
+  border-radius: 50px !important;
 }
 
 /* customers Swiper list  */
 .customers {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    background-color: var(--secondary-color);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background-color: var(--secondary-color);
 }
 
 .customers-swiper {
-    width: 95%;
-    margin-top: 1rem;
+  width: 95%;
+  margin-top: 1rem;
 }
 
 .customerts-logo {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .customers-logo-parent {
-    width: 100%;
-    max-width: 150px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    filter: grayscale(100%);
-    transition: all 0.8s;
+  width: 100%;
+  max-width: 150px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%);
+  transition: all 0.8s;
 }
 
 .customers-logo-parent:hover {
-    filter: unset;
+  filter: unset;
 }
 
 /* Responsived for min width 576px */
 @media screen and (min-width: 576px) {
-    .my-skills-box {
-        display: flex;
-        padding: 2rem;
-    }
+  .my-skills-box {
+    display: flex;
+    padding: 2rem;
+  }
 
-    .my-skills-box-icon {
-        width: 40px;
-        height: 40px;
-        margin-left: 1rem;
-    }
+  .my-skills-box-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+  }
 
-    .inside-boxs-txt {
-        text-align: right;
-    }
+  .inside-boxs-txt {
+    text-align: right;
+  }
 
-    .left-qoute {
-        font-size: 35px;
-        top: 15px;
-    }
-    .feedback-box-name {
-        font-size: 20px;
-        padding: 1rem 5.5rem 0 0;
-    }
+  .left-qoute {
+    font-size: 35px;
+    top: 15px;
+  }
+  .feedback-box-name {
+    font-size: 20px;
+    padding: 1rem 5.5rem 0 0;
+  }
 }
 
 /* Responsived for min width 992px */
 @media screen and (min-width: 992px) {
+  .my-skills-box-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .my-skills-box-main {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .my-skills-box {
-        margin: auto;
-        width: 48%;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
+  .my-skills-box {
+    margin: auto;
+    width: 48%;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }
